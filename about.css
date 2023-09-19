@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;1,900&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;    
+
+
+}
+body{
+  font-family: "Montserrat",sans-serif;
+
+  
+}
+header{
+width: 100%;
+height: 85vh;
+background: rgb(29, 35, 94); 
+box-shadow: 0px 10px 10px rgb(29, 35, 94);  
+}
+nav{
+  width: 100%;
+  background-color:transparent;
+  position: fixed;
+  padding-top: 15px;
+height: 60px;
+}
+/* background color of nav bar after scroll*/
+.coloring{
+background: rgb(70, 142, 201);    
+
+    z-index: 1000;
+}
+.contener__nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+color: rgb(255, 255, 255);
+cursor: pointer;
+
+}
+.logo span{
+    color: rgb(235, 158, 65);
+    padding: 3px;
+}
+ul{
+    color: aliceblue;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+ul a{
+    color: aliceblue;
+}
+ul a:hover{
+    color: rgb(235, 158, 65);
+}
+.header_contaner{
+    width: 80%;
+    
+    left:21vh;
+    height:75vh ;
+    top:10vh;
+    position: absolute;
+ display: flex;   
+}
+.left{
+    width: 50%;
+    height: 100%;
+    
+}
+.right{
+    width: 50%;
+    height: 100%;
+    padding-top: 10vh;
+    padding-left: 4vh;
+
+}
+.left img{
+    width: 90%;
+    margin: auto;
+}
+.right h1{
+color: aliceblue;
+margin-bottom: 4vh;
+font-family: "Montserrat",sans-serif;
+
+}
+.right p{
+    color: aliceblue;
+    font-size: 14px;
+margin-bottom: 5vh;
+}
+.right .data{
+width: 100%;
+height: 30vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+.data .databox{
+    width: 25vh;
+    height: 29vh;
+    background-color: rgba(255, 255, 255, 0.1);
+   text-align: center;
+   border-radius: 10px;
+}
+.databox:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+.databox i{
+
+color: aliceblue;
+    width: 8vh;
+    height: 7vh;
+    font-size: 23px;
+    margin-top: 5vh;
+    padding-top: 15px;
+    border-radius: 5px;
+}
+.ont{
+    background-color: rgba(255, 0, 0, 0.863);
+    transition: ease-in-out;
+    transition-delay: 400ms;
+}
+.two{
+    background: rgba(16, 175, 56, 0.918);
+    transition: ease-in-out;
+    transition-delay: 400ms;
+}
+.three{
+    background-color: darkslateblue;
+    transition: ease-in-out;
+    transition-delay: 400ms;
+}
+.databox h3{
+    color: aliceblue;
+    margin-top: 3.5vh;
+}
+.databox h6{
+    color: aliceblue;
+    margin-top: 1vh;
+}
+.ont:hover{
+    color:rgba(255, 0, 0, 0.863) ;
+    background: transparent;
+    border: 1px solid;
+    border-color: rgba(255, 0, 0, 0.863);
+}
+.two:hover{
+    color:  rgba(16, 175, 56, 0.918);
+    background: transparent;
+    border: 1px solid;
+    border-color:  rgba(16, 175, 56, 0.918);
+}
+.three:hover{
+    color:rgb(50, 42, 104);
+    background: transparent;
+    border: 1px solid;
+    border-color:  rgb(51, 43, 102);;
+}
+/*-----------Team section--------*/
+.team{
+    height: 120vh;
+box-shadow: 0px 10px 10px rgb(29, 35, 94);  
+    
+    background-color: rgba(14, 19, 87, 0.836);
+    padding-top: 7vh;
+    font-size: 25px;
+}
+.team_contaner{
+    width: 80%;
+    
+    left:21vh;
+    height:90vh ;
+    top:108vh;
+    position: absolute;
+ display: flex;  
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ transition: all 600ms ease;
+
+}
+.team h1{
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    
+}
+.teambox{
+    width: 230px;
+    height: 290px;
+    background: rgba(255, 255, 255,0.1);
+    margin-top: 3vh;
+    position: relative;
+    text-align: center;
+    transition: all 600ms ease;
+
+}
+.teambox img{
+    width: 180px;
+margin-top: 3.5vh;
+border-radius: 12px;
+height: 170px;
+filter: saturate(0);
+transition: all 600ms ease;
+
+}
+.teambox:hover{
+    background-color: transparent;
+     border: 1px solid rgba(29, 35, 94,0.4) ;
+}
+.teambox:hover img{
+    filter: saturate(1);
+}
+.teambox h2{
+    color: aliceblue;
+    font-size: 15px;
+    margin-top: 2vh;
+    font-weight: 600;
+
+}
+.teambox h6{
+    color: rgb(172, 180, 185);
+    font-size: 14px;
+    margin-top: 3vh;
+    font-weight: 400; 
+}
+.teambox .socialTeam{
+    font-size: 15px;
+    color: aliceblue;
+    position: absolute;
+    width: 2vh;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 50%;
+    right: 0;
+    background: rgb(70, 142, 201);
+    padding: 1rem;
+    border-radius: 10px 0px 0px 10px;
+    transform: translateY(-70px);
+    z-index: -1;
+    transition: all 600ms ease;
+    display: none;
+}
+.teambox:hover .socialTeam{
+    z-index: 90;
+    transform: translateY(-70px);
+    right: 0;
+    display: flex;
+
+}
+.socialTeam a i{
+    color: aliceblue;
+    
+}
+.socialTeam a i:hover{
+    color:rgb(235, 158, 65);
+    
+}
+/*-----the footer section--------*/
+footer{
+
+    
+    height: 40vh;
+background: rgb(70, 142, 201);    
+    
+    text-transform: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-top: 60px;
+    padding-left: 60px;
+    }
+    footer .ReFaiy{
+    
+    
+    width: 200px;
+    height: 200px;
+    font-family: "Montserrat",sans-serif;
+    color: aliceblue;
+    
+    }
+    .ReFaiy h3{
+        
+        margin-bottom: 3vh;
+    }
+    .ReFaiy p{
+        font-size: 11px;
+    }
+    .permalinks{
+        
+    width: 200px;
+    height: 200px;
+    font-family: "Montserrat",sans-serif;
+    color: aliceblue;
+    
+    }
+    .permalinks h3{
+        margin-bottom: 3vh;
+    }
+    .permalinks ul{
+        display: flex;
+        flex-direction: column;
+    font-family: "Montserrat",sans-serif;
+        font-size: 11px;
+        width: 22%;
+        
+        
+    }
+    .permalinks ul li{
+        margin-bottom: 2vh;
+        
+    }
+    .contact{
+    
+        width: 200px;
+        height: 200px;
+        font-family: "Montserrat",sans-serif;
+        color: aliceblue;
+        
+        }
+        .contact h3{
+            margin-bottom: 3.5vh;
+        }
+        .contact h6{
+            font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 5px;
+        }
+    .contact .social{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4vh;
+    }
+    .social a{
+        color:aliceblue;
+        font-size: 15px;
+    }
+    .social a:hover{
+        color:rgb(235, 158, 65);
+        
+    }
+        .primacy{
+            
+            width: 200px;
+            height: 200px;
+            font-family: "Montserrat",sans-serif;
+            color: aliceblue;
+            
+            
+        }
+        .primacy h3{
+            margin-bottom: 3vh;
+        }
+    .primacy h6{
+        margin-top: 2vh;
+        font-size: 11px;
+    font-weight: 400;
+    }

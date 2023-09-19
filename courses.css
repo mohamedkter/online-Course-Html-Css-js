@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;1,900&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;    
+
+
+}
+body{
+  font-family: "Montserrat",sans-serif;
+
+  
+}
+header{
+width: 100%;
+height: 25vh;
+background: rgb(29, 35, 94); 
+box-shadow: 0px 10px 10px rgb(29, 35, 94);  
+}
+nav{
+  width: 100%;
+  background-color:transparent;
+  position: fixed;
+  padding-top: 15px;
+height: 60px;
+}
+/* background color of nav bar after scroll*/
+.coloring{
+    background-color: rgba(129, 18, 139, 1.0);
+ 
+
+    z-index: 1000;
+}
+.contener__nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+color: rgb(255, 255, 255);
+cursor: pointer;
+
+}
+.logo span{
+    color: rgb(235, 158, 65);
+    padding: 3px;
+}
+ul{
+    color: aliceblue;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+ul a{
+    color: aliceblue;
+}
+ul a:hover{
+    color: rgb(235, 158, 65);
+}
+
+.pop__cources{
+
+    width: 100%;
+    height: 370vh;
+background: rgb(29, 35, 94); 
+      
+}
+.cources_contaner
+{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+
+}
+
+.cources{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left:5vh;
+}
+.cources .cours_box{
+background: rgb(70, 142, 201);    
+    
+    width: 50vh;
+    height: 70vh;
+    text-align: center;
+    color: aliceblue;
+}
+.cours_box:hover{
+    background-color: transparent;
+    border: 1px solid  rgb(70, 142, 201);
+}
+.cours_box img{
+    width: inherit;
+    height: 42%;
+}
+.cours_box button{
+     width: 21vh;
+    height: 7vh;
+    position: relative;
+    bottom: -1.5vh;
+    background-color:rgb(235, 158, 65);
+    border: none;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cours_box button:hover{
+    background-color: transparent;
+    border: 2px solid  rgb(235, 158, 65);
+    
+}
+.cours_box h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 4vh;
+}
+.cours_box p{
+    font-size: 13px;
+    margin: 3vh;
+}
+
+
+
+
+/*-----the footer section--------*/
+footer{
+
+    
+    height: 40vh;
+    background-color: rgba(129, 18, 139, 1.0);
+
+    
+    text-transform: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-top: 60px;
+    padding-left: 60px;
+    }
+    footer .ReFaiy{
+    
+    
+    width: 200px;
+    height: 200px;
+    font-family: "Montserrat",sans-serif;
+    color: aliceblue;
+    
+    }
+    .ReFaiy h3{
+        
+        margin-bottom: 3vh;
+    }
+    .ReFaiy p{
+        font-size: 11px;
+    }
+    .permalinks{
+        
+    width: 200px;
+    height: 200px;
+    font-family: "Montserrat",sans-serif;
+    color: aliceblue;
+    
+    }
+    .permalinks h3{
+        margin-bottom: 3vh;
+    }
+    .permalinks ul{
+        display: flex;
+        flex-direction: column;
+    font-family: "Montserrat",sans-serif;
+        font-size: 11px;
+        width: 22%;
+        
+        
+    }
+    .permalinks ul li{
+        margin-bottom: 2vh;
+        
+    }
+    .contact{
+    
+        width: 200px;
+        height: 200px;
+        font-family: "Montserrat",sans-serif;
+        color: aliceblue;
+        
+        }
+        .contact h3{
+            margin-bottom: 3.5vh;
+        }
+        .contact h6{
+            font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 5px;
+        }
+    .contact .social{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4vh;
+    }
+    .social a{
+        color:aliceblue;
+        font-size: 15px;
+    }
+    .social a:hover{
+        color:rgb(235, 158, 65);
+        
+    }
+        .primacy{
+            
+            width: 200px;
+            height: 200px;
+            font-family: "Montserrat",sans-serif;
+            color: aliceblue;
+            
+            
+        }
+        .primacy h3{
+            margin-bottom: 3vh;
+        }
+    .primacy h6{
+        margin-top: 2vh;
+        font-size: 11px;
+    font-weight: 400;
+    }
